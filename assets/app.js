@@ -16,10 +16,7 @@ console.log('Hello Webpack Encore! Edit me in assets/app.js');
 
 // Vue js
 import Vue  from "vue";
-import Home from './components/Home.vue'
+import App from './components/App.vue'
 
-new Vue({
-    el: '#app',
-    components: {Home}
-})
+new Vue({ render: h => h(Home) }).$mount('#app')
 
